@@ -53,8 +53,8 @@ static const uart_conf_t uart_config[] = {
     {
         .dev        = USART1,                   // ?
         .rcc_mask   = RCC_APB2ENR_USART1EN,     // ?
-        .rx_pin     = GPIO_PIN(PORT_A, 9),      //done
-        .tx_pin     = GPIO_PIN(PORT_A, 10),     //done
+        .rx_pin     = GPIO_PIN(PORT_A, 10),      //done
+        .tx_pin     = GPIO_PIN(PORT_A, 9),     //done
         .rx_af      = GPIO_AF7,                 //alternate func à vérifier p.46 doc stm32l151cc
         .tx_af      = GPIO_AF7,                 //alternate func à vérifier
         .bus        = APB2,                     // ?
@@ -89,7 +89,7 @@ static const spi_conf_t spi_config[] = {
     },
     {
         .dev      = SPI2,
-        .mosi_pin = GPIO_PIN(PORT_B, 15),   //Pas défini ?
+        //.mosi_pin = GPIO_PIN(PORT_B, 15),   //Pas défini ?
         .miso_pin = GPIO_PIN(PORT_B, 14),   //done
         .sclk_pin = GPIO_PIN(PORT_B, 13),   //done
         .cs_pin   = GPIO_PIN(PORT_B, 12),   //done

@@ -36,7 +36,7 @@ extern "C" {
  * @name Macros for controlling the on-board LEDs.
  * @{
  */
-#define LED0_PIN            GPIO_PIN(PORT_B, 4)
+#define LED0_PIN            GPIO_PIN(PORT_A, 3)
 #define LED0_PORT           GPIOB
 #define LED0_MASK           (1 << 4)
 
@@ -44,9 +44,9 @@ extern "C" {
 #define LED0_OFF            (LED0_PORT->BRR  = LED0_MASK)
 #define LED0_TOGGLE         (LED0_PORT->ODR ^= LED0_MASK)
 
-#define LED1_PIN            GPIO_PIN(PORT_A, 5)
+#define LED1_PIN            GPIO_PIN(PORT_A, 0)
 #define LED1_PORT           GPIOA
-#define LED1_MASK           (1 << 5)
+#define LED1_MASK           (1)
 
 #define LED1_ON             (LED1_PORT->BSRR = LED1_MASK)
 #define LED1_OFF            (LED1_PORT->BRR  = LED1_MASK)
@@ -56,8 +56,8 @@ extern "C" {
 /**
  * @name User button
  * @{
- */
-#define BTN0_PIN            GPIO_PIN(PORT_A, 0)
+ */ // On est pas sur de l'utiliser
+#define BTN0_PIN            GPIO_PIN(PORT_A, 13)
 #define BTN0_PORT           GPIOA
 #define BTN0_MODE           GPIO_IN
 /** @} */

@@ -32,12 +32,12 @@ extern "C" {
 static const  saul_gpio_params_t saul_gpio_params[] =
 {
     {
-        .name = "LD3",
+        .name = "LD1",
         .pin = LED0_PIN,
         .mode = GPIO_OUT
     },
     {
-        .name = "LD4",
+        .name = "LD2",
         .pin = LED1_PIN,
         .mode = GPIO_OUT
     },
