@@ -59,8 +59,8 @@ static const uart_conf_t uart_config[] = {
         .tx_af      = GPIO_AF7,                 //alternate func à vérifier
         .bus        = APB2,                     // ?
         .irqn       = USART1_IRQn,              // ?
-        .type       = STM32_USART,
-        .clk_src    = 0, /* Use APB clock */
+        //.type       = STM32_USART,
+        //.clk_src    = 0, /* Use APB clock */
     }
 };
 
@@ -83,9 +83,9 @@ static const spi_conf_t spi_config[] = {
         .mosi_af  = GPIO_AF5,               //done
         .miso_af  = GPIO_AF5,               //done
         .sclk_af  = GPIO_AF5,               //done
-        .cs_af    = NULL,                   //Pas défini ?
-        .rccmask  = NULL//RCC_APB2ENR_SPI1EN,     // ?
-        .apbbus   = NULL//APB2                    //?
+        //.cs_af    = NULL,                   //Pas défini ?
+        //.rccmask  = NULL//RCC_APB2ENR_SPI1EN,     // ?
+        //.apbbus   = NULL//APB2                    //?
     },
     {
         .dev      = SPI2,
