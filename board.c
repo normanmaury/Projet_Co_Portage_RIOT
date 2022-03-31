@@ -24,6 +24,6 @@
 void board_init(void)
 {
     /* initialize the boards LEDs */
-    gpio_init(LED0_PIN, GPIO_OUT);
-    gpio_init(LED1_PIN, GPIO_OUT);
+    gpio_init(LED0_PIN, GPIO_OUT);  /* PIN 3 Port A */
+    gpio_init(LED1_PIN, GPIO_OUT);  /* PIN 0 Port A */
 }
