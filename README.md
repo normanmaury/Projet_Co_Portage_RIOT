@@ -4,15 +4,15 @@
 
 
 ## How to flash Wyres board
-make all BOARD=wyres_proto
+make all BOARD=wyres_proto  
 make flash BOARD=wyres_proto
 
 ##Using ST-Link
-Run ST's software : STM32CubeProgrammer
-Connect the board and choose ST-Link
-Select Hardware reset in the configuration panel 
-Transfer the .elf/.bin that has been created
-Start Programming
+1. Run ST's software : STM32CubeProgrammer
+2. Connect the board and choose ST-Link
+3. Select Hardware reset in the configuration panel 
+4. Transfer the .elf/.bin that has been created
+5. Start Programming
 
 ##Troubleshooting
 - If your using a standalone ST-Link with the wyres and the 
