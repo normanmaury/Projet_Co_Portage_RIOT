@@ -1,4 +1,4 @@
-### STM32@Fablab
+# STM32@Fablab
 
 * <https://github.com/normanmaury/Projet_Co_Portage_RIOT>
 
