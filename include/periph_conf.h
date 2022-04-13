@@ -16,6 +16,14 @@
  * @author      Alexandre Abadie <alexandre.abadie@inria.fr>
  */
 
+/**
+ * Projet STM32@FABLAB Polytech
+ * Portage de la carte wyres sur RiotOs
+ * Sur une base du processeur stm32l0538
+ * Changement de la configuration pour un cpu STM32L151CC
+ * Changements signalés avec des commentaires
+ */
+
 #ifndef PERIPH_CONF_H
 #define PERIPH_CONF_H
 
@@ -51,14 +59,14 @@ static const timer_conf_t timer_config[] = {
  */
 static const uart_conf_t uart_config[] = {
     {
-        .dev        = USART1,                   // ?
-        .rcc_mask   = RCC_APB2ENR_USART1EN,     // ?
-        .rx_pin     = GPIO_PIN(PORT_A, 10),      //done
-        .tx_pin     = GPIO_PIN(PORT_A, 9),     //done
+        .dev        = USART1,                   //Configuré liaison UART
+        .rcc_mask   = RCC_APB2ENR_USART1EN,     //non changé
+        .rx_pin     = GPIO_PIN(PORT_A, 10),      //Pin changé
+        .tx_pin     = GPIO_PIN(PORT_A, 9),     //Pin changé
         .rx_af      = GPIO_AF7,                 //alternate func à vérifier p.46 doc stm32l151cc
         .tx_af      = GPIO_AF7,                 //alternate func à vérifier
-        .bus        = APB2,                     // ?
-        .irqn       = USART1_IRQn,              // ?
+        .bus        = APB2,                     // non changé
+        .irqn       = USART1_IRQn,              // non changé
         //.type       = STM32_USART,
         //.clk_src    = 0, /* Use APB clock */
     }
