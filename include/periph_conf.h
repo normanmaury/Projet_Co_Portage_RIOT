@@ -19,7 +19,7 @@
 /**
  * Projet STM32@FABLAB Polytech
  * Portage de la carte wyres sur RiotOs
- * Sur une base du processeur stm32l0538
+ * Sur une base de carte ST STM32l0538-disco
  * Changement de la configuration pour un cpu STM32L151CC
  * Changements signalés avec des commentaires
  */
