@@ -75,28 +75,28 @@ static const uart_conf_t uart_config[] = {
  */
 static const spi_conf_t spi_config[] = {
     {
-        .dev      = SPI1,
-        .mosi_pin = GPIO_PIN(PORT_A, 7),    //done
-        .miso_pin = GPIO_PIN(PORT_A, 6),    //done
-        .sclk_pin = GPIO_PIN(PORT_A, 5),    //done
-        .cs_pin   = GPIO_PIN(PORT_B, 0),    //done
-        .mosi_af  = GPIO_AF5,               //done
-        .miso_af  = GPIO_AF5,               //done
-        .sclk_af  = GPIO_AF5,               //done
-        //.cs_af    = NULL,                   //Pas défini ?
-        //.rccmask  = NULL//RCC_APB2ENR_SPI1EN,     // ?
-        //.apbbus   = NULL//APB2                    //?
+        .dev      = SPI1,                   //Pin pour la liaison Serial Peripheral Interface 1
+        .mosi_pin = GPIO_PIN(PORT_A, 7),    //Pin changé
+        .miso_pin = GPIO_PIN(PORT_A, 6),    //Pin changé
+        .sclk_pin = GPIO_PIN(PORT_A, 5),    //Pin changé
+        .cs_pin   = GPIO_PIN(PORT_B, 0),    //Pin changé
+        .mosi_af  = GPIO_AF5,               //redéfini
+        .miso_af  = GPIO_AF5,               //redéfini
+        .sclk_af  = GPIO_AF5,               //redéfini
+        //.cs_af    = NULL,                   //indéfinie
+        //.rccmask  = NULL//RCC_APB2ENR_SPI1EN,     //indéfinie
+        //.apbbus   = NULL//APB2                    //indéfinie
     },
     {
-        .dev      = SPI2,
-        //.mosi_pin = GPIO_PIN(PORT_B, 15),   //Pas défini ?
-        .miso_pin = GPIO_PIN(PORT_B, 14),   //done
-        .sclk_pin = GPIO_PIN(PORT_B, 13),   //done
-        .cs_pin   = GPIO_PIN(PORT_B, 12),   //done
-        .mosi_af  = GPIO_AF5,               //done
-        .miso_af  = GPIO_AF5,               //done
-        .sclk_af  = GPIO_AF5,               //done
-        .cs_af    = GPIO_AF5,               //Done
+        .dev      = SPI2,.                  //Pin pour la liaison Serial Peripheral Interface 2
+        //.mosi_pin = GPIO_PIN(PORT_B, 15),   //N'existe pas sur la board
+        .miso_pin = GPIO_PIN(PORT_B, 14),   //Pin changé
+        .sclk_pin = GPIO_PIN(PORT_B, 13),   //Pin changé
+        .cs_pin   = GPIO_PIN(PORT_B, 12),   //Pin changé
+        .mosi_af  = GPIO_AF5,               //redéfini
+        .miso_af  = GPIO_AF5,               //redéfini
+        .sclk_af  = GPIO_AF5,               //redéfini
+        .cs_af    = GPIO_AF5,               //redéfini
         .rccmask  = RCC_APB1ENR_SPI2EN,
         .apbbus   = APB1
     },
