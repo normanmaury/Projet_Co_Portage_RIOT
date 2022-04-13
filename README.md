@@ -2,6 +2,9 @@
 
 * <https://github.com/normanmaury/Projet_Co_Portage_RIOT>
 
+## RIOT OS INSTALLATION
+1. Go to RIOT OS website and follow the instruction in the link below :
+https://doc.riot-os.org/getting-started.html
 
 ## How to flash Wyres board
 make all BOARD=wyres_proto  
